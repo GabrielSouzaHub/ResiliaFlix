@@ -1,0 +1,122 @@
+header
+{
+    background: black;
+    color: #FAD100;
+    padding: 25px 0;
+}
+.caixa
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.titulo
+{
+    font-size: 35px;
+}
+.caixa nav a
+{
+    text-decoration: none;
+    color: black;
+    margin: 0 0 0 50px;
+    border-radius: 5px;
+    background-color: #FAD100;
+    border-width: thick;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+}
+.caixa nav a:hover 
+{
+    color: blue;
+    text-decoration: underline;
+}
+.caixa nav ul li
+{
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+}
+body
+{
+    background:#e7dfc8;
+}
+.conteudoPrincipal .container
+{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 0 auto;  
+}
+.conteudoPrincipal .container img
+{
+    width: 20%;
+    height: 45%;
+    padding: 10px;
+    margin-left: 3.1%;
+}
+.rodapePrincipal .container
+{
+    display: flex;
+    background: #FAD100;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.rodapePrincipal .container img
+{
+    width: 30px;
+    height: 30px;
+}
+.rodapePrincipal .rodapeLogo
+{
+    display: flex;
+    justify-content: space-around;
+}
+.rodapePrincipal .container h2
+{
+    font-size: 20px;
+    font-weight: bolder;
+}
+header .caixa a
+{
+    flex-direction: column;
+}
+@media(max-width: 768px){
+    header .caixa
+    {
+        display: flex;
+        height: 300px;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    header h1
+    {
+        width: 100%;
+        
+        margin-left: 42%;
+    }
+    header .caixa ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    header .caixa ul li
+    {
+        padding: 10px;
+    }
+    .conteudoPrincipal .container nav
+    {
+        height: 100%;
+    }
+    .conteudoPrincipal .container img
+    {
+        width: 80%;
+        height: 80%;
+    }
+}
